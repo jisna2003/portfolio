@@ -1,0 +1,22 @@
+day 1 : 06/02/2025
+
+What I Learned Today:
+
+HTML: Structure of a webpage, creating sections like Home, About, Services, Portfolio, Contact.
+CSS: Styling elements, making the layout attractive, using flexbox for alignment.
+JavaScript: Adding dark mode toggle (🌙), and improving form validation.
+
+What I Implemented:
+
+✅ Navigation Bar – Added smooth scrolling and section links.
+✅ Hero Section – Created a welcoming intro with a "Hire Me" button.
+✅ Services & Portfolio – Displayed skills and projects in a grid layout.
+✅ Contact Form – Included basic form inputs for user messages.
+✅ Dark Mode Toggle – Implemented a button to switch themes.
+
+Challenges I Faced:
+
+Aligning elements properly using flexbox – Needed practice with display: flex; and justify-content.
+Styling the Hero Section – Making text and buttons visually appealing.
+JavaScript form validation – Handling empty inputs and incorrect email formats.
+Dark Mode Issues – Ensuring all elements change color smoothly.
