@@ -20,3 +20,36 @@ Aligning elements properly using flexbox – Needed practice with display: flex;
 Styling the Hero Section – Making text and buttons visually appealing.
 JavaScript form validation – Handling empty inputs and incorrect email formats.
 Dark Mode Issues – Ensuring all elements change color smoothly.
+
+
+day 2: 07/02/2025
+
+What i learned:
+
+How to structure a professional portfolio website using HTML, CSS, and JavaScript.
+Importance of proper alignment, navigation, and design consistency.
+How to integrate skill bars, experience sections, and interactive elements.
+Implementing dark mode and light mode toggle for better user experience.
+Understanding the role of blurred backgrounds and modern UI effects in web design.
+
+What i implemented:
+
+✅ Navigation Bar: Styled top-left navigation with active highlighting in blue.
+✅ Home Page: Fully functional landing page with a blurred background.
+✅ Resume Page:
+
+Software Skills with progress bars.
+Languages, Personal Skills, Experience, Education, What Can I Do, Design Skills, Hobbies & Interests.
+✅ Dark Mode & Light Mode Toggle: Implemented mode switching.
+✅ Hire Me Button with Two Options: "You are selected" / "Better luck next time".
+✅ Portfolio Page Layout: Sections for Work 1, Work 2, Work 3.
+✅ Contact Page: Address, email, phone, Instagram ID, and working Hire Me button.
+
+Challenges i faced:
+
+❌ Perfecting the Resume Layout: Aligning experience, education, and skills exactly as per reference took time.
+❌ Matching Background Blurs: Ensuring background images match the reference while keeping good performance.
+❌ Navigation Bar Issues: Initially, some sections were not highlighting properly when active.
+❌ Dark Mode Implementation: Making sure all elements switch colors correctly.
+❌ Button Styling & Animations: Keeping the transparent button styles and hover effects consistent.
+

@@ -1,124 +1,178 @@
-/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
 }
 
-/* Navigation Bar */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px 30px;
+.navbar {
     position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    color: orange;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    position: relative;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-/* Gradient Overlay */
-.hero::before {
-    content: "";
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
 }
 
-/* Text Styling */
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeInUp 1s forwards;
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.hero h1 span {
-    color: orange;
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.hero p {
-    font-size: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards 0.5s;
-}
-
-/* Animated Button */
-.btn {
-    background: linear-gradient(45deg, orange, red);
-    padding: 12px 24px;
-    color: white;
+.navbar ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li a.active {
+    color: blue;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+.section h2 {
+    font-size: 2rem;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-image img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.resume-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    width: 30%;
+    height: 150px;
+    background: gray;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.light-mode {
+    background: #fff;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+.resume-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.resume-column {
+    width: 30%;
+    min-width: 250px;
+    text-align: left;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.resume-column h3 {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.resume-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-column ul li {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    display: block;
+    width: 100%;
+    background: #333;
+    height: 6px;
     border-radius: 5px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(255, 140, 0, 0.8);
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-    animation: fadeInUp 1s forwards 1s;
+    position: relative;
+    overflow: hidden;
 }
 
-.btn:hover {
-    box-shadow: 0 0 20px rgba(255, 140, 0, 1);
-    transform: scale(1.1);
+.filled {
+    display: block;
+    height: 6px;
+    background: blue;
 }
 
-/* Fade-in Animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
+.hobbies span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
