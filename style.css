@@ -1,160 +1,324 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
-.navbar {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    text-align: center;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    z-index: 1000;
 }
-
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.navbar ul li a.active {
-    color: blue;
-}
-
-.section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: url('background.jpg') no-repeat center center/cover;
-}
-
-.section h2 {
-    font-size: 2rem;
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.about-image img {
-    width: 200px;
-    border-radius: 50%;
-}
-
-.resume-columns {
-    display: flex;
-    justify-content: space-around;
-}
-
-.portfolio-gallery {
-    display: flex;
-    justify-content: space-around;
-}
-
-.portfolio-item {
-    width: 30%;
-    height: 150px;
-    background: gray;
-    margin: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    background: blue;
+.toggle-mode {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 8px 12px;
+    background-color: #333;
     color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
-
-.hidden {
-    display: none;
+body {
+    background: url('2.jpeg') no-repeat center center/cover;
+   
+    color: white;
+    transition: background 0.5s ease;
 }
 
-.theme-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+.dark-mode {
+    background: url('2.jpeg') no-repeat center/cover!important;
+   
+    filter: brightness(70%);  /* Darkens the background slightly */
+    color: white;
 }
 
-.light-mode {
-    background: #fff;
-    color: #000;
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Default text color */
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s ease;
+}
+
+nav ul li a.active {
+    color: #007bff; /* Blue highlight for active page */
+    font-weight: bold;
+    border-bottom: 2px solid #007bff; /* Underline effect */
+}
+
+.toggle-mode button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.home h1 {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.light {
+    font-weight: 300;
+    color: white;
+}
+
+.bold {
+    font-weight: 700;
+    color: white;
+}
+
+.home p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 30px;  /* Adjusted padding for oval shape */
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;  /* Makes the button oval */
+    background: transparent;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);  /* Light transparency on hover */
+    color: white;
+}
+
 
 footer {
-    text-align: center;
-    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul li {
+    margin-right: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+.graphic-designer {
+    font-size: 14px; /* Adjust based on reference */
+    font-weight: 300; /* Light and elegant */
+    letter-spacing: 2px; /* Proper spacing */
+    color: rgba(255, 255, 255, 0.7); /* Light grayish-white */
+    font-family: 'Montserrat', sans-serif; /* Exact font from the reference */
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: black;  /* Ensures black background */
+    color: white;  /* Ensures text is visible */
+}
+
+
+/* Left-Side Text */
+.about-text {
+    width: 50%;
+}
+.about-text h1 {
+    font-size: 32px; /* Adjust size as needed */
+    font-weight: bold;
+    color: white; /* Ensure it's visible on black background */
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Space between text and underline */
+}
+
+/* Blue underline effect */
+.about-text h1::after {
+    content: "";
+    display: block;
+    width: 120px; /* Adjust length as needed */
+    height: 1px; /* Adjust thickness as needed */
+    background-color: #007bff; /* Blue color */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about-text .email {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+.about-text .description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.about-text .location {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.about-text .address {
+    font-size: 16px;
+    color: #00aaff;
+    border-bottom: 1px solid #00aaff;
+    display: inline-block;
+}
+
+/* Right-Side Profile Image */
+.about-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    border-radius: 10px;
+}
+
+
+body.dark-mode .about-section {
+    background: black !important; /* Ensures black background remains */
 }
 .resume-container {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.resume-content {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
+    justify-content: space-between;
+    padding: 100px 50px;
+}
+.resume-title {
+    text-align: center; /* Centers the text */
+    color: rgb(243, 243, 248); /* Changes text color to pink */
+    border-bottom:2px solid rgb(55, 4, 209);
+    font-size: 32px; /* Adjust size as needed */
+    font-weight: bold; /* Makes it bold */
+    text-transform: uppercase; /* Ensures uppercase text */
+    margin-top: 20px; /* Adds space above */
 }
 
-.resume-column {
-    width: 30%;
-    min-width: 250px;
-    text-align: left;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    margin: 10px;
+.left, .right {
+    width: 45%;
 }
 
-.resume-column h3 {
-    color: blue;
+h2 {
+    border-bottom: 2px solid rgb(248, 231, 47);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.skill {
     margin-bottom: 10px;
 }
 
-.resume-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.resume-column ul li {
-    margin-bottom: 10px;
-}
-
-.skill-bar {
-    display: block;
+.bar {
     width: 100%;
-    background: #333;
-    height: 6px;
-    border-radius: 5px;
+    height: 5px;
+    background: #555;
     position: relative;
     overflow: hidden;
 }
 
-.filled {
-    display: block;
-    height: 6px;
+.progress {
+    height: 100%;
+    width: 0;
     background: blue;
+    transition: width 1.5s ease-in-out;
+}
+
+.p90 { width: 90%; }
+.p85 { width: 85%; }
+.p75 { width: 75%; }
+.p80 { width: 80%; }
+.p100 { width: 100%; }
+.p70 { width: 70%; }
+.p50 { width: 50%; }
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline li span {
+    font-weight: bold;
+    color: blue;
 }
 
 .hobbies {
@@ -164,15 +328,75 @@ footer {
 }
 
 .hobbies span {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     padding: 5px 10px;
     border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .left, .right {
+        width: 100%;
+    }
+}
+.resume {
+    background-color: black;  /* Set background to black */
+    color: white;  /* Ensure text is visible */
+    padding: 50px;  /* Adjust spacing */
+}
+#projects {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
 
+#projects h2 {
+    font-size: 36px;
+    color: pink;
+    margin-bottom: 20px;
+}
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 
+.project-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.project-title {
+    background: rgba(255, 0, 127, 0.2);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
 
+.project-description {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    font-size: 16px;
+    color: lightgray;
+    border-radius: 5px;
+}
 
+.project-item:hover {
+    transform: scale(1.05);
+}

@@ -53,3 +53,41 @@ Challenges i faced:
 ❌ Dark Mode Implementation: Making sure all elements switch colors correctly.
 ❌ Button Styling & Animations: Keeping the transparent button styles and hover effects consistent.
 
+
+day 3 : 08/o2/2025
+
+What I Learned Today:
+
+
+How to fix navigation highlighting issues when switching between sections.
+Implementing blur backgrounds and black backgrounds for specific sections.
+Styling underlines with different colors and sizes using CSS.
+Creating a Projects section with title and description boxes instead of a Portfolio section.
+Adding proper links to buttons in the Home section for navigation.
+
+
+What I Implemented Today:
+
+
+Fixed Navigation Bar Issues (Highlighting and Cursor Placement).
+Updated Resume Section:
+Centered the "Resume" heading and changed its color to pink.
+Changed the background to black and added a blur effect.
+Changed underline colors to pink for Software Skills, Languages, etc.
+Adjusted underline thickness to be smaller.
+Modified Home Page:
+Added links to the Resume and Portfolio buttons for navigation.
+Created a New Projects Section:
+Renamed Portfolio to Projects in the navigation bar.
+Designed a two-box layout for each project (Title & Description).
+
+
+ Challenges Faced:
+
+
+Navigation bar highlight issue (Cursor not staying on the selected section).
+Adjusting the exact thickness of the underlines while keeping alignment consistent.
+Blur effect not applying properly to the Resume section background.
+CSS conflicts while styling the Projects section (Ensuring boxes remain responsive).
+
+

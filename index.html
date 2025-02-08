@@ -6,156 +6,152 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="theme-toggle">
-        <button id="theme-switch">🌙</button>
-    </div>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-mode">
+            <button id="modeToggle">Dark Mode</button>
+        </div>
+    </header>
 
     <!-- Home Section -->
-    <section id="home" class="section">
-        <div class="overlay"></div>
+    <section id="home" class="home">
         <div class="content">
-            <h1>Jisna <span>johny</span></h1>
-            <p>Graphic Designer</p>
+            <h1><span class="light">JISNA</span> <span class="bold">JOHNY</span></h1>
+            <div class="graphic-designer"><p>Graphic Designer</p></div>
             <div class="buttons">
-                <a href="#">Resume</a>
-                <a href="#">Portfolio</a>
+                <a href="cvjisna.pdf" class="btn">Resume</a>
+                <a href="https://github.com/jisna2003/portfolio" class="btn">Portfolio</a>
             </div>
         </div>
+        <footer>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/jisn_ajohny" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/9207286358" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </footer>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>ABOUT</h2>
-                <p>Email: jmartin@uptower.com</p>
-                <p>Graphic Designer with over 10 years of experience...</p>
-                <p>Location: Florida, Orlando, 12529 State Road 535</p>
-            </div>
-            <div class="about-image">
-                <img src="your-profile.jpg" alt="Profile">
-            </div>
+    <section id="about" class="about-section">
+        <div class="about-text">
+            <h1>ABOUT</h1>
+            <p class="email">jisnajohny2003@gmail.com</p>
+            <p class="description">
+                "I am a passionate Graphic Designer with a creative eye for detail and a strong foundation in design principles. Currently pursuing my MCA, I blend technical expertise with artistic vision to craft visually compelling designs. My journey from design to coding fuels my passion for innovation, allowing me to create seamless digital experiences."
+            </p>
+            <p class="location">West Chalakkudy,Thrissur</p>
+            <p class="address">Nayathodan house,Thuruthiparambu,pin code:680731</p>
+        </div>
+
+        <!-- Right-Side Profile Image -->
+        <div class="about-image">
+            <img src="profile.jpg" alt="Profile Picture">
         </div>
     </section>
+    <section id="resume" class="resume">
+        <h1 class="resume-title">RESUME</h1>
+        <div class="resume-container">
+            <div class="left">
+                <h2>SOFTWARE SKILLS</h2>
+                <div class="skill"><span>Programming languages</span><div class="bar"><div class="progress p90"></div></div></div>
+                <div class="skill"><span>Web development</span><div class="bar"><div class="progress p85"></div></div></div>
+                <div class="skill"><span>Database management</span><div class="bar"><div class="progress p75"></div></div></div>
+                <div class="skill"><span>Version control</span><div class="bar"><div class="progress p80"></div></div></div>
 
-    <!-- Resume Section -->
-   <!-- Resume Section -->
-<section id="resume" class="section">
-    <div class="resume-container">
-        <h2>RESUME</h2>
-        <div class="resume-content">
-            <!-- Left Column -->
-            <div class="resume-column">
-                <h3>Software Skills</h3>
-                <ul>
-                    <li>Photoshop <span class="skill-bar"><span class="filled" style="width: 90%;"></span></span></li>
-                    <li>Illustrator <span class="skill-bar"><span class="filled" style="width: 85%;"></span></span></li>
-                    <li>Adobe XD <span class="skill-bar"><span class="filled" style="width: 80%;"></span></span></li>
-                    <li>After Effects <span class="skill-bar"><span class="filled" style="width: 70%;"></span></span></li>
-                </ul>
+                <h2>LANGUAGES</h2>
+                <div class="skill"><span>English</span><div class="bar"><div class="progress p100"></div></div></div>
+                <div class="skill"><span>Malayalam</span><div class="bar"><div class="progress p70"></div></div></div>
+                <div class="skill"><span>Hindi</span><div class="bar"><div class="progress p50"></div></div></div>
 
-                <h3>Languages</h3>
-                <ul>
-                    <li>English <span class="skill-bar"><span class="filled" style="width: 100%;"></span></span></li>
-                    <li>Arabic <span class="skill-bar"><span class="filled" style="width: 60%;"></span></span></li>
-                    <li>Turkish <span class="skill-bar"><span class="filled" style="width: 40%;"></span></span></li>
-                </ul>
-
-                <h3>Personal Skills</h3>
-                <ul>
-                    <li>Creativity</li>
-                    <li>Team Work</li>
-                    <li>Organization</li>
-                </ul>
+                <h2>PERSONAL SKILLS</h2>
+                <p>Creativity - Team Work - Organization</p>
             </div>
 
-            <!-- Middle Column -->
-            <div class="resume-column">
-                <h3>Experience</h3>
-                <ul>
-                    <li><strong>White Fish Advertising Co.</strong> - Art Director (2022 - Present)</li>
-                    <li><strong>Pyramids Sun Advertising Co.</strong> - Senior Graphic Designer (2020 - 2022)</li>
-                    <li><strong>Planet Stationary & Printing Services Co.</strong> - Graphic Designer (2018 - 2020)</li>
-                    <li><strong>Play Graphic Advertising Agency</strong> - Graphic Designer (2016 - 2018)</li>
-                    <li><strong>Marco Florida Internet & Computers Services Co.</strong> - Graphic Designer (2014 - 2016)</li>
+            <div class="right">
+                <h2>EDUCATION</h2>
+                <ul class="timeline">
+                    <li>
+                        <span>2024-2026</span> Federal institute of science and technology - MCA (ongoing..)
+                    </li>
+                    <li>
+                        <span>2021-2024</span> Christ college Autonomous Irinjalakkuda - BCA
+                    </li>
+                    <li>
+                        <span>2019-2021</span> St.Mry's GHSS Kuzhikkattussery - plus two
+                    </li>
+                    <li>
+                        <span>2018</span> St.Antony's CHS kottat - SSLC
+                    </li>
                 </ul>
 
-                <h3>Education</h3>
-                <p><strong>BS/MS in Computer Science</strong></p>
-                <p>University of Maryland</p>
-            </div>
+                <h2>INTERNSHIP</h2>
+                <p>Spectrum softtech solutions p ltd :- 2 weeks internship based on cloud computing as a part of my curriculam</p>
 
-            <!-- Right Column -->
-            <div class="resume-column">
-                <h3>What Can I Do?</h3>
-                <ul>
-                    <li>Logo - Stationery - Branding</li>
-                    <li>Newsletter - Packaging - Catalog</li>
-                    <li>Strategy - Advertisements</li>
-                </ul>
+                <h2>What Can I Do?</h2>
+                <p>Web development - Software development - Build projects - cloud computing and DevOps</p>
 
-                <h3>Design Skills</h3>
-                <ul>
-                    <li>Creativity - Planning & Strategy</li>
-                    <li>Signs & Typography - Layout</li>
-                    <li>Color - Sense - Inspiration</li>
-                </ul>
+                <h2>Design Skills</h2>
+                <p>Creativity - Planning & Strategy - Typography - Layout - Color Sense</p>
 
-                <h3>Hobbies & Interests</h3>
+                <h2>Hobbies & Interests</h2>
                 <div class="hobbies">
-                    <span>🎨 Drawing</span>
-                    <span>📷 Photography</span>
-                    <span>🎬 Movie</span>
-                    <span>🎮 Gaming</span>
+                    <span>📖 Reading</span> <BR><span>🎵 Music</span><BR>
+                    <span>🎮 Gming</span><BR> <span>✈️ Travel</span><BR>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section">
-        <h2>PORTFOLIO</h2>
-        <div class="portfolio-gallery">
-            <div class="portfolio-item">Work 1</div>
-            <div class="portfolio-item">Work 2</div>
-            <div class="portfolio-item">Work 3</div>
-        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>CONTACT</h2>
-        <p>Address: Florida, Orlando</p>
-        <p>Email: jmartin@uptower.com</p>
-        <p>Phone: 774-555-2021</p>
-        <button id="hire-me">Hire Me</button>
-        <div id="hire-options" class="hidden">
-            <button class="option">You are selected</button>
-            <button class="option">Better luck next time</button>
+    <script src="script.js"></script>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <div class="project-title">MEDICOM medical shop management system</div>
+                <div class="project-description">MEDICOM is a Medical Shop Management System designed as a mini-project to streamline and simplify the management of medical shop operations. The system helps store owners manage stock details, inventory, and other essential shop-related information.
+
+                    Key Features:
+                    Medical Shop Management: Keeps track of medical shop details, including location, contact, and services.
+                    Stock & Inventory Management: Monitors medicine availability, expiration dates, and stock levels.
+                    Shop Comparison: Allows users to compare nearby medical shops based on pricing, availability, and customer reviews.
+                    User-Friendly Interface: Provides an easy-to-use platform for both shop owners and customers.
+                    Efficient Searching: Users can find medicines quickly and locate the nearest shops with the best options.</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">GetScheme App</div>
+                <div class="project-description">GET SCHEME is a mobile application designed to simplify access to government welfare schemes for citizens. The app categorizes various government welfare programs based on sectors and demographics, allowing users to find relevant schemes effortlessly.
+
+                    Key Features:
+                    User-Friendly Interface: Provides an easy-to-use platform for citizens to explore available government schemes.
+                    Categorization by Demographics & Sectors: Users can filter schemes based on their eligibility, such as income level, profession, or social category.
+                    Efficient Scheme Matching: The app helps users discover schemes they qualify for, ensuring they don't miss out on potential benefits.
+                    Promotes Inclusive Governance: By improving accessibility to welfare programs, the app encourages better participation in government initiatives.
+                    Would you like a more detailed project report, flowchart, or techn</div>
+            </div>
         </div>
     </section>
-
-    <footer>
-        <p>Connect with me:</p>
-        <div class="social-icons">
-            <a href="#">FB</a> <a href="#">In</a> <a href="#">IG</a> <a href="#">TW</a>
-        </div>
-    </footer>
+    
 </body>
 </html>
+
+
+
+
 
 
 
