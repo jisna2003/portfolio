@@ -55,7 +55,15 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.add("active");
         });
     });
-
+    function sendEmail(message) {
+        const email = "jisnajohny2003@gmail.com";  // Replace with your email
+        const subject = "Message from Contact Form";
+        const body = `Hello,\n\n${message}\n\nBest regards,`;
+    
+        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+    
+    
 
 
 

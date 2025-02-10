@@ -90,4 +90,98 @@ Adjusting the exact thickness of the underlines while keeping alignment consiste
 Blur effect not applying properly to the Resume section background.
 CSS conflicts while styling the Projects section (Ensuring boxes remain responsive).
 
+day 4:
 
+ description of the portfolio
+
+ Sections & Features
+
+1️⃣ Home Page
+Navigation Bar (Top-Left Aligned)
+Includes links to Home, About, Resume, Projects (formerly Portfolio), and Contact.
+Active highlighting in blue when navigating through sections.
+Blurred Background Image (Only for Home)
+The home section has a background image, exactly matching the reference.
+All other sections have a solid background (No Images).
+Introduction with Two Buttons
+"Resume" (Linked to Resume Section).
+"Projects" (Linked to Projects Section).
+Footer with Social Media Links
+Includes WhatsApp, Instagram, Twitter, Facebook.
+hre instagram and whatsapp is active.
+
+2️⃣ About Section
+
+Left-Side Content
+Includes a short bio: "I am a passionate graphic designer and MCA student."
+Styled exactly like the reference.
+Right-Side Profile Image with Custom Animation
+Profile picture with customized effects 
+Option to update profile picture.
+
+
+3️⃣ Resume Section
+
+Navigation Highlighting Fixed
+Clicking on "Resume" in navigation smoothly scrolls to the section and keeps the highlight blue.
+Black Background with Blur Effect
+The background is now black with a subtle blur effect.
+Centralized "Resume" Heading
+The word "Resume" is centered and pink.
+Pink Underline for Each Section (Smaller Size)
+Sections include:
+Software Skills 🖥️
+Languages 🗣️
+Personal Skills 🚀
+Experience 💼
+Education 🎓
+What Can I Do 🛠️
+Design Skills 🎨
+Hobbies & Interests 🎭
+Progress Bars Now Working Correctly
+Skills and experience bars fill properly as per percentages.
+
+4️⃣ Projects Section 
+
+Section Name  "Projects"
+Two Project Display Boxes
+Each box contains:
+Title (Editable).
+Description (Editable).
+Proper Spacing & Alignment
+Matches the reference design exactly.
+
+5️⃣ Contact Section
+
+Contact Details
+Email 📧
+Phone 📞
+Address 📍
+When clicked, two options appear:
+"Better Luck Next Time" 📩 (Sends a rejection email).
+"You Are Selected" 🎉 (Sends a selection email).
+
+
+Additional Features & Enhancements
+
+✅ Dark Mode & Light Mode Toggle
+
+A switch allows users to toggle between dark and light modes.
+The text of the button updates dynamically:
+"Dark Mode" → "Light Mode" (when switched).
+
+✅ Smooth Scrolling & Section Activation
+
+The scroll effect works properly, highlighting the active section in the navigation menu.
+✅ Exact Reference Matching
+
+All fonts, colors, layouts, alignments, and effects are the same as the reference.
+Animations and interactions are customized to enhance the experience.
+✅ Functional Resume & Project Buttons
+
+Clicking "Resume" navigates to the Resume section.
+Clicking "Projects" navigates to the Projects section.
+✅ No Background Image for Other Sections
+
+Only Home has a blurred background image.
+All other sections use a solid black background.

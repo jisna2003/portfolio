@@ -26,15 +26,10 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
-body {
-    background: url('2.jpeg') no-repeat center center/cover;
-   
-    color: white;
-    transition: background 0.5s ease;
-}
+
 
 .dark-mode {
-    background: url('2.jpeg') no-repeat center/cover!important;
+    background: url('image.png') no-repeat center/cover!important;
    
     filter: brightness(70%);  /* Darkens the background slightly */
     color: white;
@@ -240,13 +235,24 @@ footer ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
 .about-image img {
-    width: 100%;
+    width: 80%; /* Adjust size */
     height: auto;
-    filter: grayscale(100%);
-    border-radius: 10px;
+    border-radius: 10px; /* Slightly rounded corners */
+    filter: grayscale(100%) contrast(1.2); /* Grayscale with slight contrast */
+    transition: filter 0.5s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
 }
+
+/* Hover Effect (Color Image + Zoom-in) */
+.about-image img:hover {
+    filter: grayscale(0%) contrast(1);
+    transform: scale(1.05);
+}
+
 
 
 body.dark-mode .about-section {
@@ -260,7 +266,7 @@ body.dark-mode .about-section {
 .resume-title {
     text-align: center; /* Centers the text */
     color: rgb(243, 243, 248); /* Changes text color to pink */
-    border-bottom:2px solid rgb(55, 4, 209);
+    
     font-size: 32px; /* Adjust size as needed */
     font-weight: bold; /* Makes it bold */
     text-transform: uppercase; /* Ensures uppercase text */
@@ -272,7 +278,7 @@ body.dark-mode .about-section {
 }
 
 h2 {
-    border-bottom: 2px solid rgb(248, 231, 47);
+    
     padding-bottom: 5px;
     margin-bottom: 10px;
     width: 200px;
@@ -357,7 +363,7 @@ h2 {
 
 #projects h2 {
     font-size: 36px;
-    color: pink;
+    color: rgb(250, 240, 242);
     margin-bottom: 20px;
 }
 
@@ -399,4 +405,44 @@ h2 {
 
 .project-item:hover {
     transform: scale(1.05);
+}
+.contact { 
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.contact button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: pink;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact button:hover {
+    background-color: white;
+    color: black;
+}
+/* Apply background image only to the Home section */
+.home {
+    background: url('image.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white; /* Adjust text color if needed */
+}
+
+/* Remove background image from other sections */
+#about, #resume, #projects, #contact {
+    background: black; /* Set to black or any other color you prefer */
+    color: white; /* Adjust text color if needed */
+}
+
+/* Optional: Ensure smooth transitions */
+body {
+    transition: background 0.5s ease-in-out;
 }
